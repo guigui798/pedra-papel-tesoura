@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper Siscor</title>
+    <!--puta que pariu que codigo bagunçado do caralho-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="botoes">
+        <script>
+            var sim='';
+        </script>
+    
+
+
+    <!--Aqui é o botão da tesoura-->
+    <button onclick="
+            pickRandomNumber();
+            if(resultado=='tesoura'){
+                sim='e';
+            }
+            else if(resultado=='papel'){
+                sim='g';
+            }
+            else if(resultado=='pedra'){
+                sim='p';
+            }
+            console.log(sim);
+            console.log(resultado);
+
+
+
+        score()" class="tesora">✌️</button>
+
+<!--Aqui acaba-->
+
+
+<!--Aqui é o botão do papel-->
+
+    <button onclick="
+            pickRandomNumber();
+            if(resultado=='pedra'){
+                sim='g';
+            }
+            else if(resultado=='papel'){
+                sim='e';
+            }
+            else if(resultado=='tesoura'){
+                sim='p';
+            }
+            console.log(sim);
+            console.log(resultado);
+    
+          score()" class="papeo">✋</button>
+<!--Aqui acaba-->
+
+
+<!--Aqui é o botão da pedra-->
+    <button onclick="
+            pickRandomNumber();
+            if(resultado=='pedra'){
+                sim='e';
+            }
+            else if(resultado=='papel'){
+                sim='p';
+            }
+            else if(resultado=='tesoura'){
+                sim='g';
+            }
+            console.log(sim);
+            console.log(resultado);
+    
+    
+    
+         score()" class="preda">✊</button>
+<!--Aqui acaba-->
+
+</div>
+    <div id="result"></div>
+    <div class="placas">
+    <table>
+        <tr>
+            <td>ganhou</td>
+            <td>perdeu</td>
+            <td>empate</td>
+        </tr>
+        <tr>
+            <td id="ganhos"></td>
+            <td id="perdas"></td>
+            <td id="empates"></td>
+        </tr>
+    </table>
+</div>
+<div class="slaa">
+    <button style="width: 70px; height: 70px; margin: auto;" onclick="reset()">resetar</button>
+</div>
+    <script src="script.js"> 
+       
+    </script>
+</body>
+</html>
